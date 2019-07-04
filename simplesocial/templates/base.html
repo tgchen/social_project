@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -37,9 +38,11 @@
         </ul>
       </div>
     </nav>
+    <div class="container mycontent">
+      {% block content %}
 
-    {% block content %}
+      {% endblock %}
+    </div>
 
-    {% endblock %}
   </body>
 </html>
