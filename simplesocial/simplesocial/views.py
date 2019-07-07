@@ -1,9 +1,11 @@
 from django.views.generic import TemplateView
+from django.http import HttpResponseRedirect
+from django.core.urlresolvers import reverse
 
 class TestPage(TemplateView):
     template_name = 'test.html'
 
-class ThankPage(TemplateView):
+class ThanksPage(TemplateView):
     template_name = 'thank.html'
 
 class HomePage(TemplateView):
